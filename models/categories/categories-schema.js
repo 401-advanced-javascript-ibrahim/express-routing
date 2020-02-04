@@ -1,11 +1,14 @@
+/* eslint-disable new-cap */
+/* eslint-disable strict */
+/* eslint-disable camelcase */
 'use strict';
 
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 
 const categories = mongoose.Schema({
-    name: { type: String, required: true },
-    display_name: { type: String, required: true },
-    description: { type: String, required: true }
+  name: { type: String, required: true },
+  display_name: { type: String, required: true },
+  description: { type: String, required: true },
 });
 
-module.exports = mongoose.model('categories', categories)
+module.exports = mongoose.model('categories', categories);
